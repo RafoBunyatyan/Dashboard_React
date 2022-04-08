@@ -1,0 +1,95 @@
+.lateralPonel {
+  background-color: rgb(25 25 35)!important;
+	box-shadow: -1rem 0rem 0rem 1rem;
+  padding: 1rem;
+  margin: 1rem 0rem 0rem 2rem;
+	width: 100%;
+	max-width: 320px;
+	color: black;
+}
+
+.lateralPonelUser {
+	display: flex;
+  flex-direction: column;
+	color: #a1a7ae;
+	font-size: 1.1rem;
+	padding: 0rem 1rem;
+}
+
+.AveryClyton {
+	max-height: 180px;
+  border-radius: 50%;
+	margin: 0.5rem auto;
+}
+
+.userName {
+	text-transform: uppercase;
+	margin: 1rem auto;
+	font-size: 1.4rem;
+}	
+
+.hrSize {
+	margin: 1rem auto;
+  border: 0;
+  opacity: 0.25;
+  background-color: #fff;
+  height: 1px!important;
+	width: 100%;
+	max-width: 250px;
+}
+
+.IconGrup {
+	height: 24px;
+}
+
+.IconSpan {
+	margin-left: 1.5rem;
+}
+
+.Block_IconGreup, .Block_IconGreupMap {
+	display: flex;
+  align-items: center;
+	padding: 0.4rem 0rem;
+	color: #a1a7ae!important;
+	text-decoration: none!important;
+}
+
+.Block_IconGreupMap {
+  align-items: start;
+}
+
+.Block_IconGreup:hover, .Block_IconGreupMap:hover {
+	box-shadow: 0px 0px 3px 0px;
+}
+
+.blockHeader {
+	color: #c0c7cf;
+	font-size: 1.3rem;
+	margin: 1.5rem 0rem 1rem;
+}
+
+@media (max-width: 735px) {
+	.lateralPonel {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem 1rem 0rem 1rem;
+	box-shadow: -1rem 0rem 1rem 1rem;
+	}
+}
+
+@media (max-width: 330px) {
+	.lateralPonel {
+	margin: 1rem 0rem 0rem 0rem;
+	box-shadow: -1rem 0rem 1rem 1rem;
+	}
+
+	.lateralPonelUser {
+		width: 100%;
+	}
+
+	.IconSpan {
+		margin-left: 0.8rem;
+	}
+}

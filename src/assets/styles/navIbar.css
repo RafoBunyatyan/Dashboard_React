@@ -1,0 +1,11 @@
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 1600px;
+	padding: 0rem;
+}
+
+.bg-dark {
+	background-color: rgb(25 25 35) !important;
+  max-width: 1600px;
+	margin: 1rem auto;
+	padding: 0.5rem 2rem;
+}
