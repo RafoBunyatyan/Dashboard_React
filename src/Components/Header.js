@@ -5,6 +5,7 @@ import { mdiAccount, mdiPencil, mdiPoll } from '@mdi/js';
 import AddForm from "./AddForm";
 
 function Header() {
+
 	return (
 		<>
 			<div className="header">

@@ -5,6 +5,7 @@ import Icon, { Stack } from '@mdi/react';
 import { mdiCellphonePlay, mdiEmail, mdiMapMarker, mdiInstagram, mdiGithub, mdiFacebook, mdiTwitter } from '@mdi/js';
 
 function LateralPonel() {
+	
 	return (
 		<>
 			<div className="lateralPonel">
