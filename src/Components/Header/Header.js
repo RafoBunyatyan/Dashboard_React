@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import Icon, { Stack } from '@mdi/react';
 import { mdiAccount, mdiPencil, mdiPoll } from '@mdi/js';
-import AddForm from "../AddForm/AddForm";
+import Personal_Information from "../Personal_Information/Personal_Information";
 
 function Header() {
 
@@ -16,7 +16,7 @@ function Header() {
 							<span className="personalText">Personal Information</span>
 						</div>
 						<a className="personal_Edit" onClick={(evt) => {
-							AddForm()
+							Personal_Information()
 						}}>
 							<Icon className="IconMdi" path={mdiPencil}></Icon>
 						</a>
@@ -42,13 +42,13 @@ function Header() {
 						</a>
 					</div>
 					<div className="personal_Information">
-							<ul className="personal_grup">
+						<ul className="personal_grup">
 								<li className="personal_Item">employment</li>
 								<li className="personal_Item">education</li>
 								<li className="personal_Item">skills</li>
 								<li className="personal_Item">language</li>
 								<li className="personal_Item">hobbies</li>
-							</ul>
+						</ul>
 					</div>
 				</div>
 			</div>
