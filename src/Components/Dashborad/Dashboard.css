@@ -17,7 +17,7 @@ body {
 }
 
 @media (max-width: 735px) {
-	.container {
+	.MyContainer {
 		flex-wrap: wrap;
 	}
 }

@@ -8,7 +8,7 @@
 	color: black;
 }
 
-.lateralPonelUser {
+.lateralPonel__User {
 	display: flex;
   flex-direction: column;
 	color: #a1a7ae;
@@ -16,13 +16,13 @@
 	padding: 0rem 1rem;
 }
 
-.AveryClyton {
+.User_Icon {
 	max-height: 180px;
   border-radius: 50%;
 	margin: 0.5rem auto;
 }
 
-.userName {
+.User_Name {
 	text-transform: uppercase;
 	margin: 1rem auto;
 	font-size: 1.4rem;
@@ -38,7 +38,7 @@
 	max-width: 250px;
 }
 
-.IconGrup {
+.IconGroup {
 	height: 24px;
 }
 
@@ -46,7 +46,7 @@
 	margin-left: 1.5rem;
 }
 
-.Block_IconGreup, .Block_IconGreupMap {
+.Block_IconGroup, .IconGroupMap {
 	display: flex;
   align-items: center;
 	padding: 0.4rem 0rem;
@@ -54,11 +54,11 @@
 	text-decoration: none!important;
 }
 
-.Block_IconGreupMap {
+.IconGroupMap {
   align-items: start;
 }
 
-.Block_IconGreup:hover, .Block_IconGreupMap:hover {
+.Block_IconGroup:hover, .IconGroupMap:hover {
 	box-shadow: 0px 0px 3px 0px;
 }
 
@@ -85,7 +85,7 @@
 	box-shadow: -1rem 0rem 1rem 1rem;
 	}
 
-	.lateralPonelUser {
+	.lateralPonel__User {
 		width: 100%;
 	}
 

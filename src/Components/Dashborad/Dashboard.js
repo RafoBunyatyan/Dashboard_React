@@ -1,7 +1,7 @@
 import React from "react";
-import "../assets/styles/dashboard.css";
-import LateralPonel from "./LateralPonel";
-import Header from "./Header";
+import "./Dashboard.css";
+import LateralPonel from "../LateralPonel/LateralPonel";
+import Header from "../Header/Header";
 
 function Dashboard() {
 	return (
