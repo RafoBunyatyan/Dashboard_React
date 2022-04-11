@@ -2,9 +2,11 @@ import React from "react";
 import "./Header.css";
 import Icon, { Stack } from '@mdi/react';
 import { mdiAccount, mdiPencil, mdiPoll } from '@mdi/js';
-import Personal_Information from "../Personal_Information/Personal_Information";
+import EmployeeContext from "../EmployeeContext/EmployeeContext";
 
 function Header() {
+
+
 
 	return (
 		<>
@@ -16,7 +18,7 @@ function Header() {
 							<span className="personalText">Personal Information</span>
 						</div>
 						<a className="personal_Edit" onClick={(evt) => {
-							Personal_Information()
+							EmployeeContext()
 						}}>
 							<Icon className="IconMdi" path={mdiPencil}></Icon>
 						</a>
