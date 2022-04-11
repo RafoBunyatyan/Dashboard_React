@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Icon, { Stack } from '@mdi/react';
 import { mdiAccount, mdiPencil, mdiPoll } from '@mdi/js';
 import EmployeeContext from "../EmployeeContext/EmployeeContext";
 
 function Header() {
+	const [open, setOpen] = useState(false)
+
+	const handleOpen = () => {
+		setOpen(!open)
+		EmployeeContext()
+	}
 
 
-
+	
 	return (
 		<>
 			<div className="header">
@@ -17,9 +23,7 @@ function Header() {
 							<Icon className="IconMdi" path={mdiAccount}></Icon>
 							<span className="personalText">Personal Information</span>
 						</div>
-						<a className="personal_Edit" onClick={(evt) => {
-							EmployeeContext()
-						}}>
+						<a className="personal_Edit" title="Edit" onClick={handleOpen}>
 							<Icon className="IconMdi" path={mdiPencil}></Icon>
 						</a>
 					</div>
@@ -39,7 +43,9 @@ function Header() {
 							<Icon className="IconPoll" path={mdiPoll}></Icon>
 							<span className="personalText">About My</span>
 						</div>
-						<a className="personal_Edit">
+						<a className="personal_Edit" title="Edit" onClick={(evt) => {
+							
+						}}>
 							<Icon className="IconMdi" path={mdiPencil}></Icon>
 						</a>
 					</div>
