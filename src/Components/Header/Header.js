@@ -1,21 +1,18 @@
 import React, { useState } from "react";
-import "./Header.css";
 import Icon, { Stack } from '@mdi/react';
 import { mdiAccount, mdiPencil, mdiPoll } from '@mdi/js';
+import "./Header.css";
 import EmployeeContext from "../EmployeeContext/EmployeeContext";
 
 function Header() {
-	const [open, setOpen] = useState(false)
+	const [show, setShow] = useState(false);
 
-	const handleOpen = () => {
-		setOpen(!open)
-		EmployeeContext()
-	}
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 
-
-	
 	return (
 		<>
+			<EmployeeContext handleClose={handleClose} show={show} />
 			<div className="header">
 				<div className="header_blockUser">
 					<div className="header_personalEdit">
@@ -23,7 +20,7 @@ function Header() {
 							<Icon className="IconMdi" path={mdiAccount}></Icon>
 							<span className="personalText">Personal Information</span>
 						</div>
-						<a className="personal_Edit" title="Edit" onClick={handleOpen}>
+						<a className="personal_Edit" title="Edit" onClick={handleShow}>
 							<Icon className="IconMdi" path={mdiPencil}></Icon>
 						</a>
 					</div>
@@ -43,9 +40,7 @@ function Header() {
 							<Icon className="IconPoll" path={mdiPoll}></Icon>
 							<span className="personalText">About My</span>
 						</div>
-						<a className="personal_Edit" title="Edit" onClick={(evt) => {
-							
-						}}>
+						<a className="personal_Edit" title="Edit">
 							<Icon className="IconMdi" path={mdiPencil}></Icon>
 						</a>
 					</div>

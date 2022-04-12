@@ -35,7 +35,7 @@
 
 .personal_Edit {
 	margin-left: auto;
-	display: flex;
+	display: flex!important;
 	color: #fff!important;
 	text-decoration: none!important;
 }
@@ -44,6 +44,7 @@
 	border: 1px solid rgb(230, 216, 216);
 	box-shadow: 0px 0px 3px 0px;
 }
+
 
 .IconMdi, .IconPoll {
 	height: 24px;
