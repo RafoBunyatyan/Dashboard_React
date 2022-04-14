@@ -3,13 +3,13 @@
 }
 
 .modal  {
-		left: -2% !important;
-		top: 17% !important;
+	left: -2% !important;
+	top: 16% !important;
 }
 
 .modal-content {
 	background-color: rgb(34, 34, 42) !important;
-	width: 600px !important;
+	width: 670px !important;
 }
 
 .btn-close {
@@ -21,18 +21,19 @@
 	border: 0px solid #dee2e6 !important;
 }
 
+.modal-footer {
+	justify-content: space-between !important;
+	padding: 0rem 0.75rem 0.5rem !important;
+}
+
 .btn-close {
-	border: 1px solid #404278 !important;
+	border: 1px solid #7172a3 !important;
 	height: 0.6rem !important;
 	margin-right: 1rem !important;
 }
 
 .modal-body {
 	padding: 0rem 1rem !important;
-}
-
-.modal-footer {
-	justify-content: space-between !important;
 }
 
 .Form_Grup {
@@ -43,7 +44,7 @@
 
 .form-label, .form-control {
 	width: 40% !important;
-	margin: 1rem 0rem !important;
+	margin: 0.6rem 0rem 0.8rem !important;
 	padding-left: 1.3rem !important;
 }
 
@@ -51,13 +52,88 @@
 	width: 60% !important;
 	background-color: rgb(34, 34, 42) !important;
 	color: white !important;
-	border-color: #404278 !important;
+	border-color: #7172a3 !important;
 }
 
 .button_borders {
-	border-color: #404278 !important;
-	color: #84888c !important;
+	border-color: #7172a3 !important;
+	color: #7172a3 !important;
 	background-color: rgb(34, 34, 42) !important;
-	margin: 0rem 1rem !important;
 	text-transform: uppercase;
+}
+
+@media (max-width: 910px) {
+	.modal {
+		left: -5% !important;
+	}
+}
+
+@media (max-width: 735px) {
+	.modal-content {
+		width: 100% !important;
+	}
+
+	.Form_Grup {
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		padding-right: 0rem !important;
+	}
+
+	.form-label, .form-control {
+		margin: 0.4rem 0rem !important;
+		padding-left: 0rem !important;
+		display: flex !important;
+		justify-content: center !important;
+	}
+
+	.form-control {
+		padding-left: 0.75rem !important;
+	}
+
+	.modal-dialog {
+		max-width: 400px !important;
+		margin: 0 auto !important;
+	}
+
+	.btn-close {
+		margin-right: 2rem !important;
+	}
+
+	.modal-footer	{
+		padding: 0.75rem 2rem !important;
+	}
+
+	.modal {
+		left: 0% !important;
+	}
+}
+
+@media (max-width: 460px) {
+	.modal-dialog {
+		max-width: 350px !important;
+	}
+}
+
+@media (max-width: 400px) {
+	.modal-dialog {
+		max-width: 290px !important;
+	}
+
+	.modal-header {
+		padding: 0.8rem 0rem 0.5rem !important;
+	}
+
+	.modal-body {
+		padding: 0rem !important;
+	}
+
+	.form-label {
+		margin: 0rem !important;
+	}
+
+	.modal-footer {
+		justify-content: center !important;
+		padding: 0.6rem !important;
+	}
 }
