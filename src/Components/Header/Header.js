@@ -1,18 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Icon, { Stack } from '@mdi/react';
 import { mdiAccount, mdiPencil, mdiPoll } from '@mdi/js';
 import "./Header.css";
-import EmployeeContext from "../EmployeeContext/EmployeeContext";
+import EmployeeForm from "../EmployeeForm/EmployeeForm";
+import EmployeeAbout from "../EmployeeForm/EmployeeAbout";
 
 function Header() {
-	const [show, setShow] = useState(false);
+	// const [change, setChange] = useState([
+	// 	{ id: uuidv4(), FULLNAME: "", BIRTHDAY: "", GENDER: "", NITIONALITY: "", ADDRESS: ""  }
+	// ]);
 
-	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
+	// useEffect(() => {
+	// 	setChange(JSON.parse(localStorage.getItem('change')))
+	// }, [])
 
+
+	// useEffect(() => {
+	// 	localStorage.setItem('change', JSON.stringify(change));
+	// })
+
+	// cons t addEmployee = (FULLNAME, BIRTHDAY, GENDER, NITIONALITY, ADDRESS) => {
+	// 	setChange([...change, { id: uuidv4(), FULLNAME, BIRTHDAY, GENDER, NITIONALITY, ADDRESS  }])
+	// }
+	
 	return (
-		<>
-			<EmployeeContext handleClose={handleClose} show={show} />
+		<>	
 			<div className="header">
 				<div className="header_blockUser">
 					<div className="header_personalEdit">
@@ -20,13 +32,14 @@ function Header() {
 							<Icon className="IconMdi" path={mdiAccount}></Icon>
 							<span className="personalText">Personal Information</span>
 						</div>
-						<a className="personal_Edit" title="Edit" onClick={handleShow}>
+						{/* <a className="personal_Edit" title="Edit" onClick={handleOpenFormModal}>
 							<Icon className="IconMdi" path={mdiPencil}></Icon>
-						</a>
+						</a> */}
+						<EmployeeForm/>
 					</div>
 					<div className="personal_Information">
 						<ul className="personal_grup">
-							<li className="personal_Item">fullname</li>
+							<li className="personal_Item">fullname {  }</li>
 							<li className="personal_Item">birthday</li>
 							<li className="personal_Item">gender</li>
 							<li className="personal_Item">nitionality</li>
@@ -40,9 +53,10 @@ function Header() {
 							<Icon className="IconPoll" path={mdiPoll}></Icon>
 							<span className="personalText">About My</span>
 						</div>
-						<a className="personal_Edit" title="Edit">
+						{/* <a className="personal_Edit" title="Edit" onClick={handleOpenAboutModal}>
 							<Icon className="IconMdi" path={mdiPencil}></Icon>
-						</a>
+						</a> */}
+						<EmployeeAbout/>
 					</div>
 					<div className="personal_Information">
 						<ul className="personal_grup">

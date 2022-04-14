@@ -10,7 +10,6 @@ function Dashboard() {
 				<LateralPonel />
 				<Header />
 			</div>
-	
 		</>
 	);
 };
