@@ -1,119 +1,139 @@
 .header {
-	display: flex;
+  display: flex;
   margin: 1rem;
   box-shadow: 0rem 0rem 0rem 1rem;
-	width: 100%;
-	height: 100%;
-	color: black;
+  width: 100%;
+  height: 100%;
+  color: black;
 }
 
-.header_blockUser, .header_blockPoll {
-	background-color: rgb(25 25 35)!important;
-	box-shadow: 0rem 0rem 0rem 1rem;
-	margin-right: 1rem;
-	border-radius: 0.6rem;
-	width: 44%;
+.header_blockUser,
+.header_blockPoll {
+  background-color: rgb(25 25 35) !important;
+  box-shadow: 0rem 0rem 0rem 1rem;
+  margin-right: 1rem;
+  border-radius: 0.6rem;
+  width: 44%;
 }
 
 .header_blockPoll {
-	width: 56%;
+  width: 56%;
 }
 
 .header_personalEdit {
-	background: linear-gradient(0deg, rgba(123,49,212,1) 0%, rgba(100,42,217,1) 0%, rgba(125,55,180,1) 0%, rgba(120,70,190,1) 20%, rgba(115,80,200,1) 40%, rgba(110,90,210,1) 60%, rgba(105,100,220,1) 80%, rgba(100,115,230,1) 100%);
-	display: flex;
-	align-items: center;
-	color: white;
-	padding: 0.3rem 0.8rem 0.7rem 0.7rem;
+  background: linear-gradient(
+    0deg,
+    rgba(130, 75, 190, 1) 0%,
+    rgba(85, 120, 220, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.3rem 0.8rem 0.7rem 0.7rem;
 }
 
 .personal_Icon {
-	display: flex;
-	align-items: center;
-	font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
 }
 
 .personal_Edit {
-	margin-left: auto;
-	display: flex!important;
-	color: #fff!important;
-	text-decoration: none!important;
+  margin-left: auto;
+  display: flex !important;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 .personal_Edit:hover {
-	border: 1px solid rgb(230, 216, 216);
-	box-shadow: 0px 0px 3px 0px;
+  border: 1px solid rgb(230, 216, 216);
+  box-shadow: 0px 0px 3px 0px;
 }
 
-.IconMdi, .IconPoll {
-	height: 24px;
+.IconMdi,
+.IconPoll {
+  height: 24px;
 }
 
 .IconPoll {
-	border: 2px solid #fff;
-	height: 20px;
+  border: 2px solid #fff;
+  height: 20px;
 }
 
 .personalText {
-	font-size: 1.4rem;
-	padding: 0rem 0.8rem;
+  font-size: 1.4rem;
+  padding: 0rem 0.8rem;
 }
 
 .personal_Information {
-	color: #84888c;
-	text-transform: uppercase;
-	font-size: 1.2rem;
+  color: #84888c;
+  font-size: 1.2rem;
 }
 
 .personal_grup {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	margin: 0rem!important;
-	padding: 0rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem !important;
+  padding: 0rem;
 }
 
 .personal_Item {
-	padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  width: 100%;
+}
+
+.personal_Item_span {
+  width: 50%;
+  max-width: 160px;
+  text-transform: uppercase;
+}
+
+.personal_Item_value {
+  width: 50%;
+  margin-right: auto;
 }
 
 @media (max-width: 1230px) {
-	.header {
-		flex-wrap: wrap;
-	}
+  .header {
+    flex-wrap: wrap;
+  }
 
-	.header_blockUser, .header_blockPoll {
-		width: 100%!important;	
-	}
+  .header_blockUser,
+  .header_blockPoll {
+    width: 100% !important;
+  }
 
-	.header_blockUser {
-		margin-bottom: 1rem;
-	}
+  .header_blockUser {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 735px) {
-	.header {
-		margin: 2rem 0rem;
-		box-shadow: 0rem 0rem 1rem 1rem;
-	}
+  .header {
+    margin: 2rem 0rem;
+    box-shadow: 0rem 0rem 1rem 1rem;
+  }
 
-	.header_blockUser, .header_blockPoll {
-		margin: 0rem;
-	}
+  .header_blockUser,
+  .header_blockPoll {
+    margin: 0rem;
+  }
 
-	.header_blockUser {
-		box-shadow: 0rem 0rem 1rem 1rem;
-		margin-bottom: 2rem;
-	}
+  .header_blockUser {
+    box-shadow: 0rem 0rem 1rem 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 330px) {
-	.header_personalEdit {
-		padding: 0.3rem 0.3rem 0.5rem;
-	}
+  .header_personalEdit {
+    padding: 0.3rem 0.3rem 0.5rem;
+  }
 
-	.personalText {
-		font-size: 1.3rem;
-		padding: 0rem 0.5rem;
-	}
+  .personalText {
+    font-size: 1.3rem;
+    padding: 0rem 0.5rem;
+  }
 }

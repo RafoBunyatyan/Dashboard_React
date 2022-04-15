@@ -20,23 +20,22 @@ function Header() {
 	// 	{ id: 1, FULLNAME: "", BIRTHDAY: "", GENDER: "", NITIONALITY: "", ADDRESS: "" }
 	// ]);
 
-	// useEffect(() => {
-	// 	setChange(JSON.parse(localStorage.getItem('change')))
-	// }, [])
-
-	// useEffect(() => {
-	// 	localStorage.setItem('change', JSON.stringify(change));
-	// })
-
 	// const addEmployee = (FULLNAME, BIRTHDAY, GENDER, NITIONALITY, ADDRESS) => {
 	// 	setChange([...change, { id: 1, FULLNAME, BIRTHDAY, GENDER, NITIONALITY, ADDRESS }])
 	// }
 
-	let a = JSON.parse(localStorage.getItem('value'));
-	let b = JSON.parse(localStorage.getItem('value1'));
-	let c = JSON.parse(localStorage.getItem('value2'));
-	let d = JSON.parse(localStorage.getItem('value3'));
-	let e = JSON.parse(localStorage.getItem('value4'));
+	let array = [
+		JSON.parse(localStorage.getItem('value')),
+		JSON.parse(localStorage.getItem('value1')),
+		JSON.parse(localStorage.getItem('value2')),
+		JSON.parse(localStorage.getItem('value3')),
+		JSON.parse(localStorage.getItem('value4')),
+		JSON.parse(localStorage.getItem('valuee')),
+		JSON.parse(localStorage.getItem('value11')),
+		JSON.parse(localStorage.getItem('value22')),
+		JSON.parse(localStorage.getItem('value33')),
+		JSON.parse(localStorage.getItem('value44')),
+	]
 
 	return (
 		<>
@@ -55,11 +54,26 @@ function Header() {
 					</div>
 					<div className="personal_Information">
 						<ul className="personal_grup">
-							<li className="personal_Item">fullname {a}</li>
-							<li className="personal_Item">birthday{b}</li>
-							<li className="personal_Item">gender{c}</li>
-							<li className="personal_Item">nitionality{d}</li>
-							<li className="personal_Item">address{e}</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">fullname</span>
+								<span className="personal_Item_value">{array[0]}</span>
+							</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">birthday</span>
+								<span className="personal_Item_value">{array[1]}</span>
+							</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">gender</span>
+								<span className="personal_Item_value">{array[2]}</span>
+							</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">nitionality</span>
+								<span className="personal_Item_value">{array[3]}</span>
+							</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">address</span>
+								<span className="personal_Item_value">{array[4]}</span>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -75,11 +89,26 @@ function Header() {
 					</div>
 					<div className="personal_Information">
 						<ul className="personal_grup">
-							<li className="personal_Item">employment</li>
-							<li className="personal_Item">education</li>
-							<li className="personal_Item">skills</li>
-							<li className="personal_Item">language</li>
-							<li className="personal_Item">hobbies</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">employment</span>
+								<span className="personal_Item_value">{array[5]}</span>
+							</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">education</span>
+								<span className="personal_Item_value">{array[6]}</span>
+							</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">skills</span>
+								<span className="personal_Item_value">{array[7]}</span>
+							</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">language</span>
+								<span className="personal_Item_value">{array[8]}</span>
+							</li>
+							<li className="personal_Item">
+								<span className="personal_Item_span">hobbies</span>
+								<span className="personal_Item_value">{array[9]}</span>
+							</li>
 						</ul>
 					</div>
 				</div>

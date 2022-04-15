@@ -3,11 +3,11 @@ import "./EmployeeForm.css";
 import { Button, Form, Modal } from "react-bootstrap";
 
 function EmployeeForm(props) {
-	const [value, setValue] = useState("")
-	const [value1, setValue1] = useState("")
-	const [value2, setValue2] = useState("")
-	const [value3, setValue3] = useState("")
-	const [value4, setValue4] = useState("")
+	const [value, setValue] = useState('')
+	const [value1, setValue1] = useState('')
+	const [value2, setValue2] = useState('')
+	const [value3, setValue3] = useState('')
+	const [value4, setValue4] = useState('')
 
 	useEffect(() => {
 		localStorage.setItem('value', JSON.stringify(value))
@@ -29,14 +29,6 @@ function EmployeeForm(props) {
 		localStorage.setItem('value4', JSON.stringify(value4))
 	}, [value4])
 
-	// const [change, setChange] = useState([
-	// 	{ id: 1, FULLNAME: "", BIRTHDAY: "", GENDER: "", NITIONALITY: "", ADDRESS: "" }
-	// ]);
-
-	// const addEmployee = (FULLNAME, BIRTHDAY, GENDER, NITIONALITY, ADDRESS) => {
-	// 	setChange([...change, { id: 1, FULLNAME, BIRTHDAY, GENDER, NITIONALITY, ADDRESS }])
-	// }
-
 	return (
 		<>
 			<Modal show={props.showForm} onHide={props.handleFormClose} >
@@ -57,7 +49,7 @@ function EmployeeForm(props) {
 								setValue2(evt.target.value)
 							}} />
 							<Form.Label className="Label">NITIONALITY</Form.Label>
-							<Form.Control type="text" autoFocus name="value" onChange={(evt) => {
+							<Form.Control type="text" autoFocus onChange={(evt) => {
 								setValue3(evt.target.value)
 							}} />
 							<Form.Label className="Label">ADDRESS</Form.Label>
