@@ -3,31 +3,31 @@ import "./EmployeeForm.css";
 import { Button, Form, Modal } from "react-bootstrap";
 
 function EmployeeForm(props) {
-	const [value, setValue] = useState('')
-	const [value1, setValue1] = useState('')
-	const [value2, setValue2] = useState('')
-	const [value3, setValue3] = useState('')
-	const [value4, setValue4] = useState('')
+	const [fullName, setFullName] = useState([])
+	const [birthday, setBirthday] = useState([])
+	const [gender, setGender] = useState([])
+	const [nationality, setNationality] = useState([])
+	const [address, setAddress] = useState([])
 
 	useEffect(() => {
-		localStorage.setItem('value', JSON.stringify(value))
-	}, [value])
+		localStorage.setItem('fullName', JSON.stringify(fullName))
+	}, [fullName])
 
 	useEffect(() => {
-		localStorage.setItem('value1', JSON.stringify(value1))
-	}, [value1])
+		localStorage.setItem('birthday', JSON.stringify(birthday))
+	}, [birthday])
 
 	useEffect(() => {
-		localStorage.setItem('value2', JSON.stringify(value2))
-	}, [value2])
+		localStorage.setItem('gender', JSON.stringify(gender))
+	}, [gender])
 
 	useEffect(() => {
-		localStorage.setItem('value3', JSON.stringify(value3))
-	}, [value3])
+		localStorage.setItem('nationality', JSON.stringify(nationality))
+	}, [nationality])
 
 	useEffect(() => {
-		localStorage.setItem('value4', JSON.stringify(value4))
-	}, [value4])
+		localStorage.setItem('address', JSON.stringify(address))
+	}, [address])
 
 	return (
 		<>
@@ -38,23 +38,23 @@ function EmployeeForm(props) {
 						<Form.Group className="Form_Grup" controlId="exampleForm.ControlInput1">
 							<Form.Label className="Label">FULLNAME</Form.Label>
 							<Form.Control type="text" autoFocus onChange={(evt) => {
-								setValue(evt.target.value)
+								setFullName(evt.target.value)
 							}} />
 							<Form.Label className="Label">BIRTHDAY</Form.Label>
 							<Form.Control type="text" autoFocus onChange={(evt) => {
-								setValue1(evt.target.value)
+								setBirthday(evt.target.value)
 							}} />
 							<Form.Label className="Label">GENDER</Form.Label>
 							<Form.Control type="text" autoFocus onChange={(evt) => {
-								setValue2(evt.target.value)
+								setGender(evt.target.value)
 							}} />
 							<Form.Label className="Label">NITIONALITY</Form.Label>
 							<Form.Control type="text" autoFocus onChange={(evt) => {
-								setValue3(evt.target.value)
+								setNationality(evt.target.value)
 							}} />
 							<Form.Label className="Label">ADDRESS</Form.Label>
 							<Form.Control type="text" autoFocus onChange={(evt) => {
-								setValue4(evt.target.value)
+								setAddress(evt.target.value)
 							}} />
 						</Form.Group>
 					</Form>

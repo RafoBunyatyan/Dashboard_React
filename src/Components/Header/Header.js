@@ -5,7 +5,6 @@ import "./Header.css";
 import EmployeeForm from "../EmployeeForm/EmployeeForm";
 import EmployeeAbout from "../EmployeeAbout/EmployeeAbout";
 
-
 function Header() {
 	const [showForm, setShowForm] = useState(false);
 	const handleFormClose = () => setShowForm(false);
@@ -14,7 +13,6 @@ function Header() {
 	const [showAbout, setShowAbout] = useState(false);
 	const handleAboutClose = () => setShowAbout(false);
 	const handleAboutShow = () => setShowAbout(true);
-
 
 	// const [change, setChange] = useState([
 	// 	{ id: 1, FULLNAME: "", BIRTHDAY: "", GENDER: "", NITIONALITY: "", ADDRESS: "" }
@@ -25,16 +23,16 @@ function Header() {
 	// }
 
 	let array = [
-		JSON.parse(localStorage.getItem('value')),
-		JSON.parse(localStorage.getItem('value1')),
-		JSON.parse(localStorage.getItem('value2')),
-		JSON.parse(localStorage.getItem('value3')),
-		JSON.parse(localStorage.getItem('value4')),
-		JSON.parse(localStorage.getItem('valuee')),
-		JSON.parse(localStorage.getItem('value11')),
-		JSON.parse(localStorage.getItem('value22')),
-		JSON.parse(localStorage.getItem('value33')),
-		JSON.parse(localStorage.getItem('value44')),
+		JSON.parse(localStorage.getItem('fullName')),
+		JSON.parse(localStorage.getItem('birthday')),
+		JSON.parse(localStorage.getItem('gender')),
+		JSON.parse(localStorage.getItem('nationality')),
+		JSON.parse(localStorage.getItem('address')),
+		JSON.parse(localStorage.getItem('employment')),
+		JSON.parse(localStorage.getItem('education')),
+		JSON.parse(localStorage.getItem('skills')),
+		JSON.parse(localStorage.getItem('language')),
+		JSON.parse(localStorage.getItem('hobbies')),
 	]
 
 	return (
@@ -114,7 +112,7 @@ function Header() {
 				</div>
 			</div>
 		</>
-	)
-}
+	);
+};
 
 export default Header;

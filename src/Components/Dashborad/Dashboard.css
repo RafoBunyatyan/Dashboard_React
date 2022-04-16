@@ -1,23 +1,23 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: Helvetica, Arial, sans-serif!important;
-  background-color: #101010!important;
-	line-height: 1.6!important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  background-color: #101010 !important;
+  line-height: 1.6 !important;
 }
 
 .MyContainer {
   display: flex;
   margin: 0rem auto;
-	max-width: 1600px;
+  max-width: 1440px;
 }
 
 @media (max-width: 735px) {
-	.MyContainer {
-		flex-wrap: wrap;
-	}
+  .MyContainer {
+    flex-wrap: wrap;
+  }
 }

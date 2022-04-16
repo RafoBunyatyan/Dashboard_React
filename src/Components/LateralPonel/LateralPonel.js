@@ -2,22 +2,22 @@ import React from "react";
 import "./LateralPonel.css";
 import AveryClyton from "../../assets/images/AveryClayton.jpg"
 import Icon, { Stack } from '@mdi/react';
-import { mdiCellphonePlay, mdiEmail, mdiMapMarker, mdiInstagram, mdiGithub,	mdiFacebook, mdiTwitter } from '@mdi/js';
+import { mdiCellphonePlay, mdiEmail, mdiMapMarker, mdiInstagram, mdiGithub, mdiFacebook, mdiTwitter } from '@mdi/js';
 
 function LateralPonel() {
 	return (
 		<>
 			<div className="lateralPonel">
 				<div className="lateralPonel__User">
-					<img className="User_Icon" src={AveryClyton} alt="AveryClayton"/>
+					<img className="User_Icon" src={AveryClyton} alt="AveryClayton" />
 					<span className="User_Name">Avery Clyton</span>
-				</div>	
+				</div>
 				<div className="lateralPonel__User">
 					<hr className="hrSize" />
 					<span className="blockHeader">Contact Information</span>
 					<div className="Block_IconGroup">
 						<Icon className="IconGroup" path={mdiCellphonePlay}></Icon>
-						<span className="IconSpan">+ 374 00 00 00</span>
+						<span className="IconSpan">+ 374 00 00 00 00</span>
 					</div>
 					<a className="Block_IconGroup" href="https://aaregistry.org/story/avery-clayton-historian-and-collector/" target="_blank">
 						<Icon className="IconGroup" path={mdiEmail}></Icon>
