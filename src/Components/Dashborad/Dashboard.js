@@ -4,6 +4,7 @@ import LateralPonel from "../LateralPonel/LateralPonel";
 import Header from "../Header/Header";
 
 function Dashboard() {
+
 	return (
 		<>
 			<div className="MyContainer">
