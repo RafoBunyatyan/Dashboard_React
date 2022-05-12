@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Icon, { Stack } from '@mdi/react';
 import { mdiAccount, mdiPencil, mdiPoll } from '@mdi/js';
 import "./Header.css";
@@ -14,13 +14,6 @@ function Header() {
 	const handleAboutClose = () => setShowAbout(false);
 	const handleAboutShow = () => setShowAbout(true);
 
-	// const [change, setChange] = useState([
-	// 	{ id: 1, FULLNAME: "", BIRTHDAY: "", GENDER: "", NITIONALITY: "", ADDRESS: "" }
-	// ]);
-
-	// const addEmployee = (FULLNAME, BIRTHDAY, GENDER, NITIONALITY, ADDRESS) => {
-	// 	setChange([...change, { id: 1, FULLNAME, BIRTHDAY, GENDER, NITIONALITY, ADDRESS }])
-	// }
 
 	let array = [
 		JSON.parse(localStorage.getItem('fullName')),
